@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.dgy.xyz/2021/08/16/21-08-14/</loc>
+    
+    <lastmod>2021-08-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.dgy.xyz/tags/index.html</loc>
+    
+    <lastmod>2021-08-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.dgy.xyz/categories/index.html</loc>
+    
+    <lastmod>2021-08-16</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.dgy.xyz/2021/08/16/%E6%AC%A2%E8%BF%8E/</loc>
     
     <lastmod>2021-08-16</lastmod>
@@ -16,6 +37,13 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://blog.dgy.xyz/tags/%E6%97%A5%E8%AE%B0/</loc>
+    <lastmod>2021-08-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 
   
