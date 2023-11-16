@@ -1,0 +1,383 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DN42网络速成指北（注册篇） | 戴郭轶的个人博客</title><meta name="author" content="dgy"><meta name="copyright" content="dgy"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="DN42实验网络介绍DN42 全称 Decentralized Network 42（42 号去中心网络），是一个大型、去中心化的 VPN 网络。但是与其它传统 VPN 不同的是，DN42 本身不提供 VPN 出口服务，即不提供规避网络审查、流媒体解锁等类似服务。相反，DN42 的目的是模拟一个互联网。它使用了大量在目前互联网骨干上应用的技术（例如 BGP 和递归 DNS），可以很好地模拟一个真实">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DN42网络速成指北（注册篇）">
+<meta property="og:url" content="https://blog.mirror.dgy.xyz/2021/09/05/DN42%E7%BD%91%E7%BB%9C%E9%80%9F%E6%88%90%E6%8C%87%E5%8C%97%EF%BC%88%E6%B3%A8%E5%86%8C%E7%AF%87%EF%BC%89/index.html">
+<meta property="og:site_name" content="戴郭轶的个人博客">
+<meta property="og:description" content="DN42实验网络介绍DN42 全称 Decentralized Network 42（42 号去中心网络），是一个大型、去中心化的 VPN 网络。但是与其它传统 VPN 不同的是，DN42 本身不提供 VPN 出口服务，即不提供规避网络审查、流媒体解锁等类似服务。相反，DN42 的目的是模拟一个互联网。它使用了大量在目前互联网骨干上应用的技术（例如 BGP 和递归 DNS），可以很好地模拟一个真实">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg">
+<meta property="article:published_time" content="2021-09-05T03:08:16.000Z">
+<meta property="article:modified_time" content="2023-11-16T13:35:55.515Z">
+<meta property="article:author" content="dgy">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://blog.mirror.dgy.xyz/2021/09/05/DN42%E7%BD%91%E7%BB%9C%E9%80%9F%E6%88%90%E6%8C%87%E5%8C%97%EF%BC%88%E6%B3%A8%E5%86%8C%E7%AF%87%EF%BC%89/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//static.cloudflareinsights.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?6d6addcb340a10fbaa69986860e9ee33";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-YS60TZL363"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YS60TZL363');
+</script><script defer="defer" data-pjax="data-pjax" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;50a1d0288fca430084ac68f46c5cc8f0&quot;}"></script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'DN42网络速成指北（注册篇）',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-11-16 21:35:55'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div></div></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">戴郭轶的个人博客</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">DN42网络速成指北（注册篇）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-05T03:08:16.000Z" title="发表于 2021-09-05 11:08:16">2021-09-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-11-16T13:35:55.515Z" title="更新于 2023-11-16 21:35:55">2023-11-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BD%91%E7%BB%9C%E6%95%99%E7%A8%8B-%E6%95%99%E7%A8%8B/">-网络教程 -教程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="DN42网络速成指北（注册篇）"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="DN42实验网络介绍"><a href="#DN42实验网络介绍" class="headerlink" title="DN42实验网络介绍"></a>DN42实验网络介绍</h2><p>DN42 全称 Decentralized Network 42（42 号去中心网络），是一个大型、去中心化的 VPN 网络。但是与其它传统 VPN 不同的是，DN42 本身不提供 VPN 出口服务，即不提供规避网络审查、流媒体解锁等类似服务。相反，DN42 的目的是模拟一个互联网。它使用了大量在目前互联网骨干上应用的技术（例如 BGP 和递归 DNS），可以很好地模拟一个真实的网络环境。</p>
+<p>简而言之，DN42：</p>
+<ul>
+<li>不适合单纯想要保护隐私、规避网络审查的用户</li>
+<li>不适合在网内消耗大量流量，例如用于解锁流媒体服务的用户</li>
+<li>适合想要研究网络技术，练习服务器、路由器等网络设备配置，甚至后续在真实互联网建立 AS 的用户</li>
+<li>适合拥有真实 AS，但担心自己<a target="_blank" rel="noopener" href="https://blog.cloudflare.com/how-verizon-and-a-bgp-optimizer-knocked-large-parts-of-the-internet-offline-today/">配置错误广播出错误路由、干掉半个互联网</a>，希望有个地方测试的用户。</li>
+</ul>
+<p>正因为此，使用 DN42 的门槛比较高。就像在真实互联网中一样，你要扮演一个 ISP（互联网服务提供商），注册自己的个人信息，ASN 号码，IPv4 和 IPv6 的地址池，并且使用 BGP 在自己的服务器上广播它们。你还要和其它的用户联系，和他们做 Peering（对接），一步步进入完整的 DN42 网络。</p>
+<p>DN42 在 172.20.0.0/14 和 fd00::/8 上运行，而这两个 IP 段都是分配给内网使用的。换句话说，你在 DN42 上怎么折腾，都不会影响到服务器其它的互联网连接。（摘录自<a target="_blank" rel="noopener" href="https://lantian.pub/article/modify-website/dn42-experimental-network-2020.lantian/">蓝天博客</a>）</p>
+<p>DN42 在 <code>172.20.0.0/14</code> 和 <code>fd00::/8</code> 上运行，而这两个 IP 段都是分配给内网使用的。换句话说，你在 DN42 上怎么折腾，都不会影响到服务器其它的互联网连接。</p>
+<p>你可以通过加入 <a target="_blank" rel="noopener" href="https://t.me/Dn42Chat">Telegram 群组</a> 或者 <a href="irc://irc.hackint.org/#dn42">IRC 频道</a> 来寻求帮助。</p>
+<p>请注意，DN42 是一个测试网络，所有人都在帮助所有人。即使你不小心搞砸了，也没有人会指责你。</p>
+<p>也欢迎大家来和我进行对接，可以在 <a target="_blank" rel="noopener" href="https://dn42.dgy.xyz/">dn42.dgy.xyz</a> 获取更多信息。</p>
+<h2 id="注册-DN42"><a href="#注册-DN42" class="headerlink" title="注册 DN42"></a>注册 DN42</h2><p>这个流程其实我感觉是加入dn42网络中最为繁琐的一步，（如果你后面没有遇到奇奇怪怪的bug的话），并且对你的基本能力要求还是比较高的，下面列出的仅仅是基本要求，未来在你研究逐渐深入的时候要求也会逐步上升：</p>
+<ol>
+<li>拥有一个Linux环境，我个人是使用VPS来完成整个注册流程的；</li>
+<li>能够使用常用的Linux命令（如：cd, ls, mv, vi等等），知道基本的包管理命令（如：apt, yum等）；</li>
+<li>能进行基本的git操作（如：clone, push, pull, commit）；</li>
+<li>有一定的网络知识，能了解基本的交换机，路由器工作原理，能够运用基本的网络调试命令（如：ping, traceroute等）；</li>
+<li>有基本的网络搜索能力，对于上述不会的内容或者将来出现的问题能够使用谷歌，必应等搜索引擎解决问题；</li>
+<li>有基本的英文能力。</li>
+</ol>
+<p>现在，让我们<strong>开始</strong>吧！</p>
+<p>你在任何时候都可以参考官方的注册流程，并且在任何时候出现问题都请以官方注册流程为准：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://dn42.dev/howto/Getting-Started">DN42 官方 Wiki 的注册流程</a></li>
+<li><a target="_blank" rel="noopener" href="https://git.dn42.dev/dn42/registry/src/branch/master/README.md">DN42 官方 Wiki 的 Git 操作流程（创建 Pull Request）</a></li>
+</ul>
+<ol>
+<li>你需要在<a target="_blank" rel="noopener" href="https://git.dn42.dev/"> https://git.dn42.dev/</a> 注册属于自己的账户，如果你有使用GitHub的经验，那么就应该对于下面的操作比较熟练，可以选择略过：<br> (1). 如果你的vps上没有安装git的话，需要安装git，相关命令为：<br> <code>yum install git (cent os)</code><br> 或者<br> <code>apt install git (debian)</code><br> (2). 你需要设置git的全局（下面的设置是我的设置，请改为你自己刚才注册的）：<br> <code>git config --global user.name dgy</code><br> <code>git config --global user.email dgy@dgy.xyz</code><br> <code>ssh-keygen -t rsa -C &quot;dgy@dgy.xyz</code><br> 将输出的内容复制到增加ssh密钥中；<br> (3). 你需要生成gpg密钥对自己的提交进行验证：<br> 运行：<br> <code>gpg --full-gen-keygpg --generate-key  gpg --gen-key</code><br> 其中之一，请注意，不同版本的gpg生成密钥的默认命令不一样，之后按照流程生成自己的密钥即可。<br> 然后在ssh中运行下列命令：<br> <code>gpg --list-secret-keys --keyid-format LONG</code><br> 输出应当如图所示：<br> <img src="https://file.cdn.ntdgy.top/dn42_introduce/1.png" alt="img"><br> 然后使用以下命令进行导出：<br> <code>gpg --armor --export 145BB196C917B616</code><br> 之后需要在git中通过相关命令设置签名：<br> <code>git config --global user.signingkey 145BB196C917B616</code><br> 同时，你还需要把你的密钥上传的一个公共查询服务器上：<br> <code>gpg --keyserver hkp://keyserver.ubuntu.com --send-key [密钥ID]</code></li>
+<li>找一个合适的地方，运行：<br> <code>git clone git@git.dn42.dev:dn42/registry.git</code><br> 之后你需要新建一个分支，命名格式类似 [昵称]-[日期，YYYYMMDD]/[自定义的分支名称]。<br> 假设我要在 2020 年 9 月 1 日注册，那么分支名就叫 dgy-20210818/registry。<br> 运行这两行命令来创建分支，并将分支上传。记得替换你自己的分支名：<br> <code>git checkout -b dgy-20210818/registry</code><br> <code>git push --set-upstream origin dgy-20210818/registry</code></li>
+<li>在你新clone 下的仓库里新建一系列的文件：<br> (1). 在 data/mntner 文件夹下创建一个名为 [昵称]-MNT 的文件，这个文件代表你的账户，用来认证你以后的操作。<br> 下面是我的注册信息:</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mntner:             DGY-MNT</span><br><span class="line">admin-c:            DGY-DN42</span><br><span class="line">tech-c:             DGY-DN42</span><br><span class="line">mnt-by:             DGY-MNT</span><br><span class="line">source:             DN42</span><br><span class="line">auth:               ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDCAjtKaya6ytppR/Vng5XUIq5UigI7w2oEYiN+d2FVXtPIAhC1TK6LAsgOowEee5N5qEuf+Jioziq3/xo0ECtjSGE/UYaVe5L7ITgtdBiYbYLIYD/z83z4XmQXMEB0D7W65pR4GE0ERvlAkEWBilKM/yk9i6Bw1pYSxCn06r5YDffvLRagMFQkpRYWUXr7O8wGQo8vJfJILOLvwalW98P9Q97eZcNEDXpllvnFeJID29nj7jQ1GJMbtuflmFAypN5RXq8iPnp7lQX77OxsaUI9sKF+3tr8D3F3CFv3wEmugLw16yLzrh4ybA1FL5qSXZ9DMLZMFEKG0VZl3Mp1lBbh dgy@dgy.xyz</span><br><span class="line">auth:               pgp-fingerprint A91FDEC8B00C1C5139892E67585D94C8F4013AB3</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>其中各项的含义如下：<ul>
+<li><code>mntner</code>：即 <code>maintainer（维护者）</code>，说明这个账户的名称，与文件名相同。</li>
+<li><code>admin-c</code>：即 <code>admin contact（管理员联系信息）</code>，需要指向后续创建的 person 文件，一般为 <code>[昵称]-DN42</code>。</li>
+<li><code>tech-c</code>：即 <code>tech contact（技术员联系信息）</code>，需要指向后续创建的 person 文件，一般也为 <code>[昵称]-DN42</code>。</li>
+<li><code>mnt-by</code>：即 <code>maintain by（由谁维护）</code>，指向这个账户本身，一般为 <code>[昵称]-MNT</code>。</li>
+<li><code>source</code>：固定为 <code>DN42</code>。</li>
+<li><code>ayth</code>: 你的个人认证信息。一般接受两种类型：GPG 公钥和 SSH 公钥。 你必须在 GPG 公钥和 SSH 公钥中添加至少一种。这两个公钥我们已经在上面生成过了，填入即可。</li>
+</ul>
+</li>
+<li><strong>注意：**各个项目的名称和值之间有一长串空格。这段空格的长度**不是自己可以随意修改的，也不能替换成 Tab**。名称 + 冒号 + 空格的长度</strong>必须是 20 个字符**。</li>
+</ul>
+<p>(2). 在data/person 文件夹下也创建一个 [昵称]-DN42 的文件，代表你的个人信息。说是个人信息，但其实只需要一个邮箱。例如我的 person 文件如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">person:             Guoyi Dai</span><br><span class="line">e-mail:             dgy@dgy.xyz</span><br><span class="line">contact:            +1 (385) 645-0542</span><br><span class="line">nic-hdl:            DGY-DN42</span><br><span class="line">mnt-by:             DGY-MNT</span><br><span class="line">source:             DN42</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>各项含义如下：<ul>
+<li><code>person</code>：你的昵称。</li>
+<li><code>e-mail</code>：你的邮箱。</li>
+<li><code>contact</code>：可选，你的其它联系方式，例如 IRC、Telegram 等。</li>
+<li><code>nic-hdl</code>：<code>NIC handle</code>，指向文件本身，与文件名相同，<code>[昵称]-DN42</code>。</li>
+<li><code>mnt-by</code>：<code>maintain by（由谁维护）</code>，由谁维护，指向你之前的 mntner 文件，<code>[昵称]-MNT</code>。</li>
+<li><code>source</code>：固定为 <code>DN42</code>。</li>
+</ul>
+</li>
+</ul>
+<p>(3). 接下来你要给自己选择一个 AS 编号，即 ASN。在国际互联网上，ASN 范围 4200000000 - 4294967294 是被保留作私下使用（private use）的，DN42 占用的就是其中的一块，424242<strong>0000</strong> - 424242<strong>3999</strong>。<strong>（注意范围是 4000 个，不是 10000 个，剩下 6000 个暂未开放注册）</strong> 在这 4000 个号码中挑选一个你喜欢的，并且没有被占用的，然后进入 <code>data/aut-num</code> 文件夹，创建文件。例如我的AS文件如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">aut-num:            AS4242420826</span><br><span class="line">as-name:            DGY-AS</span><br><span class="line">descr:              Peer with me at dgy@dgy.xyz</span><br><span class="line">admin-c:            DGY-DN42</span><br><span class="line">tech-c:             DGY-DN42</span><br><span class="line">mnt-by:             DGY-MNT</span><br><span class="line">source:             DN42</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>各项含义如下：<ul>
+<li><code>aut-num</code>：AS 号。</li>
+<li><code>as-name</code>：AS 的名称，一般只在 DN42 的一些网络结构示意图中看到。可以设置为 <code>[昵称]-AS</code>。</li>
+<li><code>descr</code>：AS 简介，一般只在结构图中看到，随意填写。</li>
+<li><code>admin-c</code>：<code>admin contact（管理员联系信息）</code>，指向你的 person 文件，<code>[昵称]-DN42</code>。</li>
+<li><code>tech-c</code>：<code>tech contact（技术员联系信息）</code>，指向你的 person 文件，<code>[昵称]-DN42</code>。</li>
+<li><code>mnt-by</code>：<code>maintain by（由谁维护）</code>，由谁维护，指向你之前的 mntner 文件，<code>[昵称]-MNT</code>。</li>
+<li><code>source</code>：固定为 <code>DN42</code>。</li>
+</ul>
+</li>
+<li>如果你拥有真实互联网的ASN，可以填入自己的ASN号，并且在source里填入自己的RIR名称。但是我不知道相关流程会不会更为复杂，也欢迎给我补充。</li>
+</ul>
+<p>（4). 接下来就是选择自己的IP。进入 data/inetnum 文件夹，挑选一块空闲的地址块给自己使用</p>
+<ul>
+<li><p>DN42 的 IPv4 地址在 <code>172.20.0.0/14</code> 范围，即 <code>172.20.0.0 - 172.23.255.255</code>。</p>
+</li>
+<li><p>你在 DN42 内能申请的最小地址块是 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/29</span><br></pre></td></tr></table></figure>
+
+<p>，即 8 个 IP，其中除去第一个 IP 标记地址块，最后一个 IP 作为地址块内广播（broadcast）不可用以外，可以分给 6 个服务器和设备。</p>
+<ul>
+<li>对于 “只想简单玩玩” 的用户，<code>/29</code> 已经够了。</li>
+</ul>
+</li>
+<li><p>DN42 一般建议申请 <code>/27</code>，你能直接申请的最大地址块是 <code>/26</code>。</p>
+</li>
+<li><p>可以先申请一块较小的地址块，再逐步扩大。</p>
+</li>
+<li><p>选好地址块之后，在 <code>data/inetnum</code> 文件夹创建 IPv4 地址对应的文件。例如我的其中一个地址块是 <code>172.23.196.0/27</code>，对应的文件就是 <code>data/inetnum/172.23.196.0_27</code>：</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">inetnum:            172.23.196.0 - 172.23.196.31</span><br><span class="line">netname:            DGY-IPV4</span><br><span class="line">remarks:            Peer with me at dgy@dgy.xyz</span><br><span class="line">descr:              Peer with me at dgy@dgy.xyz</span><br><span class="line">country:            CN</span><br><span class="line">admin-c:            DGY-DN42</span><br><span class="line">tech-c:             DGY-DN42</span><br><span class="line">mnt-by:             DGY-MNT</span><br><span class="line">nserver:            ns1.dgy.dn42</span><br><span class="line">nserver:            ns2.dgy.dn42</span><br><span class="line">status:             ASSIGNED</span><br><span class="line">cidr:               172.23.196.0/27</span><br><span class="line">source:             DN42</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>各项含义如下：<ul>
+<li><code>inetnum</code>：你的这个地址块的范围，如果你不会算，那么可以根据你的地址块前后的用户推出，或者直接用 <a target="_blank" rel="noopener" href="https://ipjisuanqi.com/">IP 地址计算器</a>。</li>
+<li><code>netname</code>：你的这个地址块的名称，没什么用，随便取（但一般建议保持 <code>[昵称]-IPV4</code> 格式）。</li>
+<li><code>remarks</code>：简介，随意填写。</li>
+<li><code>descr</code>：简介，随意填写。</li>
+<li><code>country</code>：你的国家代号，填 CN 代表中国大陆。</li>
+<li><code>admin-c</code>：<code>admin contact（管理员联系信息）</code>，指向你的 person 文件，<code>[昵称]-DN42</code>。</li>
+<li><code>tech-c</code>：<code>tech contact（技术员联系信息）</code>，指向你的 person 文件，<code>[昵称]-DN42</code>。</li>
+<li><code>mnt-by</code>：<code>maintain by（由谁维护）</code>，由谁维护，指向你之前的 mntner 文件，<code>[昵称]-MNT</code>。</li>
+<li><code>nserver</code>：IP 地址反向解析的 DNS 服务器。如果你不知道这个是什么，或者不需要这个，可以去掉。</li>
+<li><code>status</code>：固定为 <code>ASSIGNED</code>。</li>
+<li><code>cidr</code>：你的地址块的范围，与 <code>inetnum</code> 相同，只是以 CIDR 方式表示。</li>
+<li><code>source</code>：固定为 <code>DN42</code>。</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>注册 IP 的过程还没结束，你还需要创建一个 route 对象，授权某个 AS 使用这个地址。在 data/route 文件夹创建对应文件，例如我的是<code>data/route/172.23.196.0_27</code>:</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">route:              172.23.196.0/27</span><br><span class="line">descr:              Peer with me at dgy@dgy.xyz</span><br><span class="line">origin:             AS4242420826</span><br><span class="line">mnt-by:             DGY-MNT</span><br><span class="line">source:             DN42</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>各项含义如下：<ul>
+<li><code>route</code>：你的这个地址块的范围。</li>
+<li><code>descr</code>：简介，随意填写。</li>
+<li><code>origin</code>：你授权哪个 AS 使用这个地址块，填写你的 AS 编号。</li>
+<li><code>mnt-by</code>：<code>maintain by（由谁维护）</code>，由谁维护，指向你之前的 mntner 文件，<code>[昵称]-MNT</code>。</li>
+<li><code>source</code>：固定为 <code>DN42</code>。</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>现在都2021年了，真不考虑一下IPV6吗？可以没有IPV4，但是不能没有IPV6呢 在 <code>data/inet6num</code> 中创建文件。</li>
+</ol>
+<ul>
+<li>DN42 的 IPv6 地址在 <code>fd00::/8</code> 范围，位于私有 IPv6 地址段。</li>
+<li>DN42 内 IPv6 地址块一般只以 <code>/48</code> 的大小存在，足够任何人使用。</li>
+<li>最好的选择是随机生成一个地址块。你可以使用一些<a target="_blank" rel="noopener" href="https://simpledns.plus/private-ipv6">随机生成前缀的工具</a>。</li>
+<li><strong>请注意：</strong> dn42<strong>不允许</strong>自定义IPV6 ULA</li>
+<li>与其定义一个好记的地址，不如注册一个好记的域名。（此处应该有教程）</li>
+<li>生成完地址块后，类似的在 <code>data/inet6num</code> 中创建文件，例如我的地址块是 <code>fd11:552f:74db::/48</code>，文件名就是 <code>data/inet6num/fd11:552f:74db::_48</code>：<br> 下面是我的注册信息，仅供参考：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">inet6num:           fd11:552f:74db:0000:0000:0000:0000:0000 - fd11:552f:74db:ffff:ffff:ffff:ffff:ffff</span><br><span class="line">netname:            DGY-IPV6</span><br><span class="line">descr:              Peer with me at dgy@dgy.xyz</span><br><span class="line">country:            CN</span><br><span class="line">admin-c:            DGY-DN42</span><br><span class="line">tech-c:             DGY-DN42</span><br><span class="line">mnt-by:             DGY-MNT</span><br><span class="line">nserver:            ns1.dgy.dn42</span><br><span class="line">nserver:            ns2.dgy.dn42</span><br><span class="line">status:             ASSIGNED</span><br><span class="line">cidr:               fd11:552f:74db::/48</span><br><span class="line">source:             DN42</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>各项含义如下：<ul>
+<li><code>inet6num</code>：你的这个地址块的范围。IPv6 的范围算起来很简单，从全 0 到全 f。</li>
+<li><code>netname</code>：你的这个地址块的名称，没什么用，随便取（但一般建议保持 <code>[昵称]-IPV6</code> 格式）。</li>
+<li><code>remarks</code>：简介，随意填写。</li>
+<li><code>descr</code>：简介，随意填写。</li>
+<li><code>country</code>：你的国家代号，填 CN 代表中国大陆。</li>
+<li><code>admin-c</code>：<code>admin contact（管理员联系信息）</code>，指向你的 person 文件，<code>[昵称]-DN42</code>。</li>
+<li><code>tech-c</code>：<code>tech contact（技术员联系信息）</code>，指向你的 person 文件，<code>[昵称]-DN42</code>。</li>
+<li><code>mnt-by</code>：<code>maintain by（由谁维护）</code>，由谁维护，指向你之前的 mntner 文件，<code>[昵称]-MNT</code>。</li>
+<li><code>nserver</code>：IP 地址反向解析的 DNS 服务器。如果你不知道这个是什么，或者不需要这个，可以去掉。</li>
+<li><code>status</code>：固定为 <code>ASSIGNED</code>。</li>
+<li><code>cidr</code>：你的地址块的范围，与 <code>inetnum</code> 相同，只是以 CIDR 方式表示。</li>
+<li><code>source</code>：固定为 <code>DN42</code>。</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>与上面的IPV4一样，你还需要在<code>data/route6</code> 中创建一个<code>route6</code>的对象，授权你自己的AS使用，例如我的就是<code>data/route6/fd11:552f:74db::_48</code>：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">route6:             fd11:552f:74db::/48</span><br><span class="line">descr:              Peer with me at dgy@dgy.xyz</span><br><span class="line">origin:             AS4242420826</span><br><span class="line">mnt-by:             DGY-MNT</span><br><span class="line">source:             DN42</span><br></pre></td></tr></table></figure>
+
+<p>每项含义和IPV4相同，此处不再赘叙。</p>
+<ol start="8">
+<li>你可能还需要一个域名？（第一次注册的时候可以先略过，后续再补充）</li>
+</ol>
+<p> 在dn42中，所有的域名都是以<code>*.dn42</code>结尾的，你可能需要搭建自己的权威dns服务器（如bind, powerdns等）。<br> 创建<code>data/dns/dgy.dn42</code>然后填写：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">domain:             dgy.dn42</span><br><span class="line">admin-c:            DGY-DN42</span><br><span class="line">tech-c:             DGY-DN42</span><br><span class="line">mnt-by:             DGY-MNT</span><br><span class="line">nserver:            ns1.dgy.dn42 172.23.196.1</span><br><span class="line">nserver:            ns2.dgy.dn42 172.23.196.2</span><br><span class="line">nserver:            ns1.dgy.dn42 fd11:552f:74db::1</span><br><span class="line">nserver:            ns2.dgy.dn42 fd11:552f:74db::2</span><br><span class="line">source:             DN42</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>这里的nsserver就是你的权威域名服务器了，注意，这里需要添加glue record，也就是需要有ip的解析结果。</li>
+</ul>
+<p>完成了这些之后你需要检查自己提交的格式，可以使用dn42自带的脚本：<br> <code>fmt-my-stuff DGY-MNT</code><br> <code>check-my-stuff DGY-MNT</code><br> <code>check-pol origin/master DGY</code></p>
+<h2 id="发起PR！"><a href="#发起PR！" class="headerlink" title="发起PR！"></a>发起PR！</h2><p>这个时候就要恭喜你了，你已经基本上完成了dn42的注册了，剩下就需要提交本地修改了。接下来 <code>cd</code> 到 Git 仓库的根目录，执行一次 <code>git add .</code>，然后执行 <code>git commit -S</code>，使用你先前创建的 GPG 密钥，创建一份<strong>带 GPG 签名的 commit</strong>。</p>
+<ul>
+<li>如果你操作快已经 commit 完了，你可以执行 <code>git commit --amend -S</code> 修改之前的 commit，将其签名。</li>
+<li>如果你先前 commit 了多次，你需要把所有变更合并到一次 commit 里，直接运行 Registry 根目录下的<code> ./squash-my-commits -S --push</code> 脚本即可。</li>
+<li>请<strong>注意</strong>：脚本在某些时候会出现bug，需要手动合并自己的commit并签名，具体操作如下：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 获取更新</span><br><span class="line">git fetch origin master</span><br><span class="line"># 切换到你自己的分支</span><br><span class="line">git checkout dgy-20210818/registry</span><br><span class="line"># Rebase 你的分支，实际上就是将你的修改在最新的 Registry 上重新应用一遍</span><br><span class="line"># 输入这行命令后会出现一个编辑器，你需要保留第一行的 pick，</span><br><span class="line"># 并将第二行开始（如果有的话）的 pick 全部改成 squash，然后保存并退出编辑器就可以了</span><br><span class="line">git rebase -i -S origin/master</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>然后执行<code>git push -f</code>上传自己的修改。</li>
+<li>回到 <a target="_blank" rel="noopener" href="https://git.dn42.dev/dn42/registry">dn42/registry</a> 发起pull request， 等待merge哦~<br> <strong>请注意</strong>：虽然部分管理员是中国人，但是dn42的官方语言是英语，请使用<strong>英语</strong>发起pr哦。<br> 如果你的pr有问题，管理员会给你回复，修改好之后直接push就可以，不需要再次提交pr了。</li>
+</ul>
+<h2 id="联系："><a href="#联系：" class="headerlink" title="联系："></a>联系：</h2><p>有什么问题请发送邮件至 <a href="mailto:i@dgy.xyz">i@dgy.xyz</a> 或者去<a target="_blank" rel="noopener" href="https://t.me/Dn42Chat">非官方 Telegram 群组</a>寻找帮助。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">dgy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://blog.mirror.dgy.xyz/2021/09/05/DN42%E7%BD%91%E7%BB%9C%E9%80%9F%E6%88%90%E6%8C%87%E5%8C%97%EF%BC%88%E6%B3%A8%E5%86%8C%E7%AF%87%EF%BC%89/">https://blog.mirror.dgy.xyz/2021/09/05/DN42%E7%BD%91%E7%BB%9C%E9%80%9F%E6%88%90%E6%8C%87%E5%8C%97%EF%BC%88%E6%B3%A8%E5%86%8C%E7%AF%87%EF%BC%89/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.mirror.dgy.xyz" target="_blank">戴郭轶的个人博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/04/03/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E7%AE%80%E5%8D%95%E7%9A%84openwrt%E6%A0%B9%E7%9B%AE%E5%BD%95%E6%89%A9%E5%AE%B9%E8%BF%87%E7%A8%8B/"><img class="prev-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">记录一次简单的openwrt根目录扩容过程</div></div></a></div><div class="next-post pull-right"><a href="/2021/08/17/%E6%A0%A1%E5%9B%AD%E7%BD%91%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB%E6%B5%8B%E8%AF%95/"><img class="next-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">校园网文件共享测试</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#DN42%E5%AE%9E%E9%AA%8C%E7%BD%91%E7%BB%9C%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">DN42实验网络介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C-DN42"><span class="toc-number">2.</span> <span class="toc-text">注册 DN42</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%91%E8%B5%B7PR%EF%BC%81"><span class="toc-number">3.</span> <span class="toc-text">发起PR！</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%81%94%E7%B3%BB%EF%BC%9A"><span class="toc-number">4.</span> <span class="toc-text">联系：</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By dgy</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">欢迎来到我的碎碎念~这是一个不用考虑任何事的地方~</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'oxOqB6RQT9wm6v749p7M3Ptr-MdYXbMMI',
+      appKey: '7PITnPzXNgIogWH1yDiOT1vH',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer src="/live2d-widget/autoload.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="I,LOVE,YOU,喵呜,喵喵" data-fontsize="15px" data-random="true" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
